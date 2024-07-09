@@ -1,4 +1,6 @@
 import { BsHeart } from 'react-icons/bs';
+import { BsStarFill } from 'react-icons/bs';
+import { FaCartShopping } from 'react-icons/fa6';
 
 function StoreItems() {
     const storeItems = [
@@ -8,13 +10,15 @@ function StoreItems() {
           description: "A yellow colored pretty bag for Ladies",
           image: "Images/Yellow Ladies Bag.png",
           price: "N15,000",
+          rating: "4.5",
         },
         {
           id: "1",
-          title: "Men's Leather shoe (Brown).png",
+          title: "Men's Leather shoe (Brown)",
           description: "A brown colored shoe made of original leather for men",
           image: "Images/Men's Leather shoe (Brown).png",
           price: "N15,000",
+          rating: "3.8",
         },
         {
           id: "2",
@@ -22,6 +26,7 @@ function StoreItems() {
           description: "Transluscent foundation for all skin complexion",
           image: "Images/Perfect Fit Foundation.png",
           price: "N10,000",
+          rating: "5.0",
         },
         {
           id: "3",
@@ -29,6 +34,7 @@ function StoreItems() {
           description: "A lively green colored bag for professional ladies",
           image: "Images/Lively Green Ladies Bag.png",
           price: "N25,000",
+          rating: "4.9",
         },
         {
           id: "4",
@@ -36,6 +42,7 @@ function StoreItems() {
           description: "A three inched heel shoe for coporate ladies",
           image: "Images/Elegant Female Pumps.png",
           price: "N25,000",
+          rating: "4.5",
         },
         {
           id: "5",
@@ -43,6 +50,7 @@ function StoreItems() {
           description: "A white bag made of leather for ladies",
           image: "Images/Sisi Leather Bag (White).png",
           price: "N20,000",
+          rating: "4.8",
         },
         {
           id: "6",
@@ -50,6 +58,7 @@ function StoreItems() {
           description: "A white comfortable sneakers for ladies",
           image: "Images/Comfy Padded Sneakers.png",
           price: "N23,000",
+          rating: "5.0",
         },
         {
           id: "7",
@@ -57,6 +66,7 @@ function StoreItems() {
           description: "A mul ticolored vintage bag for stylish ladies",
           image: "Images/Stylish Colorful Bag.png",
           price: "N14,000",
+          rating: "5.0",
         },
       ];
 
@@ -65,9 +75,20 @@ function StoreItems() {
          <img className="w-32 m-8"
             src={storeItem.image} alt={storeItem.title} />
             <div className='BsHeart'><BsHeart /></div>
-           <div className='storeDesc'>
+          <div className='itemDesc'>
+           <div className='itemTitle'>
             {storeItem.title}
-            {storeItem.price}</div>
+            </div>
+            <div className='itemRating'>
+            <div className='BsStarFill'><BsStarFill /></div>
+            {storeItem.rating}
+            </div>
+            <div className='itemPriceBox'>
+              <span className='itemPrice'>{storeItem.price}</span>
+              <p className='addCart'>
+            <FaCartShopping /> Add to Cart
+            </p></div>
+          </div>
         </div>
        );
 

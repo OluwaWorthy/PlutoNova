@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'PlusJakartaSans-Italic-VariableFont_wght';
 }
 
 .nav{
@@ -9,6 +10,16 @@
   width: 93vw;
   margin-left: 3vw;
   margin-right: 3vw;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  width: 15vw;
+}
+
+.logo div {
+  padding-top: 0.75rem;
 }
 .cart{
   vertical-align: middle;
@@ -25,7 +36,9 @@
 }
 
 .m-8{
-  margin: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
   display: block;
 }
 
@@ -41,6 +54,59 @@
   top: 50px; 
   right: 58px;
   font-size: x-large;
+}
+
+.itemTitle {
+  display: flex;
+  flex-direction: row;
+  font-weight: bolder;
+  padding-top: 1vw;
+}
+
+.itemRating {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1vw;
+}
+
+.itemRating .BsStarFill {
+  color: #EDA145;
+}
+
+.itemPriceBox {
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.itemPrice {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.addCart {
+  display: flex;
+  text-align: center;
+  font-weight: lighter;
+  background-color: #f46b01;
+  border-radius: 100vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 50%;
+  justify-content: space-around;
+  font-size: large;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  color: #fafafa;
+}
+
+.itemDesc {
+  margin-left: 32px;
+  margin-right: 32px;
+  font-size: large;
 }
 
 .App-logo {
