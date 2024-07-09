@@ -1,5 +1,6 @@
 import  Header from './Components.js/Header.js';
 import  StoreItems from './Components.js/StoreItems.js';
+import  Cart from './Components.js/Cart.js';
 import './App.css';
 
 
