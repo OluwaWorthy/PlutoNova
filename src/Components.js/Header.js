@@ -1,14 +1,12 @@
-import { BsCart3 } from 'react-icons/bs';
+import { FaCartShopping } from 'react-icons/fa6';
 
 function Header() {
  let pagetitle = "Pluto Nova";
  return (
-    <div>
-    <h1>
-    <img src='{ BsCart3 }' alt="shopping cart"/>
-      {pagetitle}</h1>
-    <img src='{ BsCart3 }' alt="shopping cart"/>
-    </div>
+    <nav className='nav'> 
+      <h1>{pagetitle}</h1>
+      <div className='cart'><FaCartShopping /></div>
+    </nav>
  )
 };
 

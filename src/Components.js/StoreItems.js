@@ -1,3 +1,5 @@
+import { BsHeart } from 'react-icons/bs';
+
 function StoreItems() {
     const storeItems = [
         {
@@ -52,7 +54,7 @@ function StoreItems() {
         {
           id: "7",
           title: "Stylish Colorful Bag",
-          description: "A multicolored vintage bag for stylish ladies",
+          description: "A mul ticolored vintage bag for stylish ladies",
           image: "Images/Stylish Colorful Bag.png",
           price: "N14,000",
         },
@@ -61,8 +63,11 @@ function StoreItems() {
       const listItems = storeItems.map(storeItem => 
          <div key={storeItem.id} className="storeItem">
          <img className="w-32 m-8"
-            src={storeItem.image} alt={storeItem.title}/>
-           {storeItem.title}-{storeItem.price}
+            src={storeItem.image} alt={storeItem.title} />
+            <div className='BsHeart'><BsHeart /></div>
+           <div className='storeDesc'>
+            {storeItem.title}
+            {storeItem.price}</div>
         </div>
        );
 

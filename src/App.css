@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 93vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.cart{
+  vertical-align: middle;
+  padding-top: 1rem;
+  font-size: xx-large;
+  margin-right: 2vw;
+}
+
 .flex{
   display: flex;
   flex-direction: row;
@@ -11,12 +26,21 @@
 
 .m-8{
   margin: 2rem;
+  display: block;
 }
 
 .storeItem{
   display:flex;
   flex-direction: column;
   width: 25%;
+  position: relative;
+}
+
+.storeItem .BsHeart {
+  position: absolute; 
+  top: 50px; 
+  right: 58px;
+  font-size: x-large;
 }
 
 .App-logo {
