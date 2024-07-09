@@ -1,0 +1,73 @@
+const data = [
+  {
+    id: "1",
+    title: "Yellow Ladies Bag",
+    description: "",
+    image: "",
+    price: "N15,000",
+  },
+  {
+    id: "2",
+    title: "Men's Leather Shoe (Brown)",
+    description: "",
+    image: "",
+    price: "N15,000",
+  },
+  {
+    id: "3",
+    title: "Perfect Fit Foundation",
+    description: "",
+    image: "",
+    price: "N10,000",
+  },
+  {
+    id: "4",
+    title: "Lively Green Ladies Bag",
+    description: "",
+    image: "",
+    price: "N25,000",
+  },
+  {
+    id: "5",
+    title: "Elegant Female Pumps",
+    description: "",
+    image: "",
+    price: "N25,000",
+  },
+  {
+    id: "6",
+    title: "Sisi Leather Bag (White)",
+    description: "",
+    image: "",
+    price: "N20,000",
+  },
+  {
+    id: "7",
+    title: "Comfy Padded Sneakers",
+    description: "",
+    image: "",
+    price: "N23,000",
+  },
+  {
+    id: "8",
+    title: "Stylish Colorful Bag",
+    description: "",
+    image: "",
+    price: "N14,000",
+  },
+];
+
+const listItems = storeItems.map(storeItem => {
+ const itemtext = '${storeItem.title} - ${storeItem.price}'
+ return <div key={storeItem.id} className="col-3}">
+  <img 
+     src={storeItem.image} alt={dish.name}/>
+    {itemtext}
+ </div>
+}
+
+return (
+  <div>
+    <ul>
+     {listItems}
+

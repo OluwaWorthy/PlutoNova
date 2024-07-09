@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+.flex{
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  flex-wrap: wrap;
+}
+
+.m-8{
+  margin: 2rem;
+}
+
+.storeItem{
+  display:flex;
+  flex-direction: column;
+  width: 25%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
