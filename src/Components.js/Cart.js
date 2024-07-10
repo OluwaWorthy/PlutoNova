@@ -14,6 +14,12 @@ function Cart() {
             <button className="gotToCheckout">
                 Got to Checkout
             </button>
+            <Router>
+                <Switch>               
+                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/Checkout" component={Checkout}/>
+                </Switch>
+            </Router>
         </div>
     </div>
  )

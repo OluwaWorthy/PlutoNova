@@ -13,6 +13,12 @@ function Header() {
       <div className='cart'>
           <a onClick={() => setOpen(true)}><FaCartShopping /></a>
           {open && <Cart />}
+          <Router>
+                <Switch>               
+                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/Cart" component={Cart}/>
+                </Switch>
+            </Router>
       </div>
     </nav>
  )
