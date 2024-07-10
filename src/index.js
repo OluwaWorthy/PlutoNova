@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import Checkout from './Components.js/Checkout.js';
+import  Cart from './Components.js/Cart.js';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -7,7 +10,14 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+        <App />
+        <Routes>
+            <Route exact path="/Cart" component={<Cart/>} />
+            <Route exact path="/Checkout" component={<Checkout/>}/>
+            <Route exact path="/App" component={<App/>}/>
+        </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

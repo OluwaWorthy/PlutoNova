@@ -1,4 +1,10 @@
-function Checkout () {
+function Checkout() {
+    
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(e.target[0].value)
+        console.log(this.inputNode.value)
+    }
     return (
         <div>
             <div className="delivery">
@@ -19,22 +25,20 @@ function Checkout () {
                 </label>
                 <div className="deDetails">
                     <h2><bold>Delivery Details</bold></h2>
-                    <form onsubmit="get_action(this)" className="form"> 
+                    <form onsubmit={this.handleSubmit} className="form"> 
                         <label>Email:</label>
                         <br />
-                        <input type="email" value="" required />
+                        <input type="email" value="" ref={node => (this.inputNode = node)} required />
                         <br />
                         <label>Phone Number:</label>
                         <br />
-                        <input type="number" value="" required />
+                        <input type="number" value="" ref={node => (this.inputNode = node)} required />
                         <br />
                         <label>Address:</label>
                         <br />
-                        <input type="text" value="" required />
+                        <input type="text" value="" ref={node => (this.inputNode = node)} required />
                         <br />
-                        function get_action(form) {
-                            form.action = form_action
-                        }
+                            
                     </form>
                 </div>
             </div>
@@ -45,18 +49,15 @@ function Checkout () {
                 </div>
                 <div>
                     <h2><bold>Card Details</bold></h2>
-                    <form onsubmit="get_action(this)" className="form"> 
-                        <input type="text" value="" placeholder="John Doe" required />
+                    <form onsubmit={this.handleSubmit} className="form"> 
+                        <input type="text" value="" ref={node => (this.inputNode = node)} placeholder="John Doe" required />
                         <br />
-                        <input type="number" value="" placeholder="**** **** **** ****" required />
+                        <input type="number" value="" ref={node => (this.inputNode = node)} placeholder="**** **** **** ****" required />
                         <br />
-                        <input type="date" value="" placeholder="02/25" required />
+                        <input type="date" value="" ref={node => (this.inputNode = node)} placeholder="02/25" required />
                         <br />
-                        <input type="number" value="" placeholder="cvv" required />
+                        <input type="number" value="" ref={node => (this.inputNode = node)} placeholder="cvv" required />
                         <br />
-                        function get_action(form) {
-                            form.action = form_action
-                        }
                     </form>
                 </div>
                 <div>
@@ -68,3 +69,5 @@ function Checkout () {
         </div>
     )
 }
+
+export default Checkout;
