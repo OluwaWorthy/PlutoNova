@@ -13,8 +13,8 @@ root.render(
     <BrowserRouter>
         <App />
         <Routes>
-            <Route exact path="/Cart" component={<Cart/>} />
-            <Route exact path="/Checkout" component={<Checkout/>}/>
+            <Route exact path="/Components.js/Cart.js" component={<Cart/>} />
+            <Route exact path="/Components.js/Checkout.js" component={<Checkout/>}/>
             <Route exact path="/App" component={<App/>}/>
         </Routes>
     </BrowserRouter>
