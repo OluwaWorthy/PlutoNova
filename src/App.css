@@ -103,6 +103,9 @@
   margin-bottom: 7px;
   color: #fafafa;
 }
+.BsBkmk {
+  display: none;
+}
 
 .itemDesc {
   margin-left: 32px;
@@ -180,33 +183,95 @@
   
 }
 @media (min-width:427px) and (max-width:768px){
+  .nav{
+    width: 85vw;
+  }
+  .logo{
+    width: 50%;
+  }
   .flex {
     min-height: 100vh;
-    width: 97vw;
-    display: flex;
-    flex-wrap: wrap;
+    width: 90vw;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     padding: 0;
+    justify-content: space-around;
   }
   .storeItem{
-    width: 45%;
+    width: 50%;
+  }
+  .itemPriceBox{
+    flex-direction: column;
+  }
+  .itemTitle{
+    font-weight: lighter;
+    font-size: x-small;
+  }
+  .addCart{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+    width: 70%;
+    justify-content: space-around;
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+  }
+  .BsBkmk {
+    display: flex;
+    font-size: smaller;
+    float: right;
+    padding-top: 2.5vw;
+  }
+  .BsHeart {
+    display: none;
   }
 }
 @media (max-width:426px){
+  .nav{
+    width: 85vw;
+  }
+  .logo{
+    width: 50%;
+  }
   .flex {
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     padding: 0;
+    justify-content: space-around;
+    width: 85vw;
+  }
+  .addCart{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+    width: 100%;
+    justify-content: space-around;
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+  }
+  .itemPriceBox{
+    flex-wrap: wrap;
+    box-sizing: border-box;
   }
   ul{
     margin: 2vw;
     padding: 1vw;
+  }
+  .storeItem{
+    width: 100%;
+  }
+  .itemPrice{
+    align-content: end;
   }
 }
 .App-link {

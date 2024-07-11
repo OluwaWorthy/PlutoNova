@@ -1,6 +1,7 @@
 import { BsHeart } from 'react-icons/bs';
 import { BsStarFill } from 'react-icons/bs';
 import { FaCartShopping } from 'react-icons/fa6';
+import { BsBookmark} from 'react-icons/bs';
 
 function StoreItems() {
     const storeItems = [
@@ -85,9 +86,12 @@ function StoreItems() {
             </div>
             <div className='itemPriceBox'>
               <span className='itemPrice'>{storeItem.price}</span>
-              <p className='addCart'>
-            <FaCartShopping /> Add to Cart
-            </p></div>
+              <div>
+                <p className='addCart'>
+                <FaCartShopping /> Add to Cart
+                </p><div className='BsBkmk'><BsBookmark /></div>
+              </div>
+            </div>
           </div>
         </div>
        );
