@@ -9,8 +9,9 @@ function Header() {
  return (
     <nav className='nav'> 
       <div className='logo'>
-        <div><img src='Images/PlutoLogo.png' alt='PlutoNova logo'/></div>
-        <h1>{pagetitle}</h1></div>
+        <Link to="/App" className=""><div><img src='Images/PlutoLogo.png' alt='PlutoNova logo'/></div></Link>
+        <Link to="/App" className=""><h1>{pagetitle}</h1></Link>
+      </div> 
       <div className='cart'>
         <Link to="/Cart.js" className=""><FaCartShopping /></Link>
       </div>
