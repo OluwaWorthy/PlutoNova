@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Checkout from './Components.js/Checkout.js';
 import  Cart from './Components.js/Cart.js';
 import './index.css';

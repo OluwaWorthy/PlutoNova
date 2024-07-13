@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 function Header() {
  let pagetitle = "Pluto Nova";
- const [open, setOpen] = React.useState(false);
  return (
     <nav className='nav'> 
       <div className='logo'>
@@ -13,7 +12,7 @@ function Header() {
         <Link to="/App" className=""><h1>{pagetitle}</h1></Link>
       </div> 
       <div className='cart'>
-        <Link to="/Cart.js" className=""><FaCartShopping /></Link>
+        <Link to={Cart} className=""><FaCartShopping /></Link>
       </div>
     </nav>
  )

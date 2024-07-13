@@ -1,10 +1,4 @@
 function Checkout() {
-    
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(e.target[0].value)
-        console.log(this.inputNode.value)
-    }
     return (
         <div>
             <div className="delivery">
@@ -25,7 +19,7 @@ function Checkout() {
                 </label>
                 <div className="deDetails">
                     <h2><bold>Delivery Details</bold></h2>
-                    <form onsubmit={this.handleSubmit} className="form"> 
+                    <form action="form.php" className="form"> 
                         <label>Email:</label>
                         <br />
                         <input type="email" value="" ref={node => (this.inputNode = node)} required />
@@ -49,7 +43,7 @@ function Checkout() {
                 </div>
                 <div>
                     <h2><bold>Card Details</bold></h2>
-                    <form onsubmit={this.handleSubmit} className="form"> 
+                    <form action="form.php" className="form"> 
                         <input type="text" value="" ref={node => (this.inputNode = node)} placeholder="John Doe" required />
                         <br />
                         <input type="number" value="" ref={node => (this.inputNode = node)} placeholder="**** **** **** ****" required />
